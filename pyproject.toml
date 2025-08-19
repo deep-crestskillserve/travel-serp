@@ -1,0 +1,26 @@
+[project]
+name = "ai-travel-agent"
+version = "0.1.1"
+description = ""
+authors = [
+    {name = "Deep"}
+]
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "python-dotenv==1.0.1",
+    "langchain>=0.2.0",
+    "langchain-google-genai>=2.0.0",
+    "langgraph>=0.2.0",
+    "grandalf==0.8",
+    "streamlit==1.38.0",
+    "serpapi==0.1.5",
+    "nest-asyncio>=1.6.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
